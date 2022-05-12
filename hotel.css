@@ -1,0 +1,43 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+.contenedor{
+position: relative;
+width: 620px;
+height:510px;
+cursor: pointer;
+
+}
+#nav {
+height: 150px;
+border-radius: 1em;
+margin: 2em 8em;
+color: #fff;
+ }
+
+.contenedor div{
+padding: 1em;
+position:absolute;
+margin: 13em 8em;
+width:100%;
+height:100%;
+}
+.caja1{
+background: url(hotel.jpg);
+background-size: 100% 100%;
+}
+.caja2{
+background: url(habi.jpg);
+background-size: 100% 100%;
+transition:0.6s;
+clip-path: polygon(0 39%, 100% 74%, 100% 100%, 88% 100%, 75% 100%, 49% 100%, 0 100%);
+}
+.caja2:hover{
+clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 76% 62%, 71% 92%, 49% 63%, 0 62%);
+}
+.caja1:hover ~ .caja2{
+clip-path: polygon(0 0, 100% 0, 100% 0, 84% 0, 100% 0, 43% 0, 1% 0);
+}
